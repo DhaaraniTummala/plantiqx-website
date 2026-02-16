@@ -27,311 +27,236 @@
         <!-- Hero Section -->
         <section class="products-hero">
             <div class="container">
-                <div class="section-label">Our Products</div>
+                <div class="section-label">Product and Solutions</div>
                 <h1>Smart Solutions for Smarter Industries</h1>
-                <p>At PlantIQX, we offer a powerful suite of intelligent products designed to transform traditional
-                    factories into data-driven, connected, and self-optimizing ecosystems. Each product is built with
-                    precision, scalability, and innovation — giving your business the power to monitor, analyze, and
-                    elevate in today's competitive industrial landscape.</p>
+                <p>At PlantIQX, we offer a comprehensive suite of intelligent products, automation systems, and solutions designed to transform traditional factories into data-driven, connected, and self-optimizing ecosystems.</p>
 
                 <div class="product-tabs">
-                    <button class="product-tab active" data-product="asset-management">Asset Management</button>
-                    <button class="product-tab" data-product="user-management">User Management</button>
-                    <button class="product-tab" data-product="iot-integration">IoT Integration</button>
-                    <button class="product-tab" data-product="security-admin">Security & Administration</button>
-                    <button class="product-tab" data-product="enterprise-integration">Enterprise Integration</button>
-                    <button class="product-tab" data-product="reports-analytics">Reports & Analytics</button>
+                    <button class="product-tab active" data-section="products">Products</button>
+                    <button class="product-tab" data-section="automation">Automation</button>
+                    <button class="product-tab" data-section="solutions">Solutions</button>
                 </div>
             </div>
         </section>
 
-        <!-- Product Detail Section -->
-        <section class="product-detail">
+        <!-- Products Section -->
+        <section id="products-section" class="main-section active">
             <div class="container">
-                <div class="section-label">Maximize Uptime. Minimize Downtime.</div>
-                <h2>Asset Management</h2>
-                <p class="product-description">Gain complete visibility over every machine, tool, and asset in your
-                    facility. The PlantIQX Asset Management module tracks performance, predicts maintenance needs, and
-                    prevents unexpected breakdowns.</p>
-                <p class="product-description">With predictive intelligence and automated alerts, your assets stay
-                    healthy, efficient, and productive — every day.</p>
+                <div class="section-header">
+                    <div class="section-label">Products and Solutions</div>
+                    <h2>Comprehensive Industrial Management Solutions</h2>
+                    <p>Our product suite provides complete visibility and control over your industrial operations</p>
+                </div>
 
-                <div class="product-image">
-                    <img src="assets/svg/Assets.svg" alt="Asset Management Dashboard">
+                <div class="submodules-grid">
+                    <!-- Asset Management -->
+                    <div class="submodule-card">
+                        <div class="submodule-icon">
+                            <img src="assets/svg/Assets.svg" alt="Asset Management">
+                        </div>
+                        <h3>Asset Management</h3>
+                        <p>Track, monitor, and optimize every asset in your facility with real-time insights and predictive maintenance capabilities.</p>
+                        <ul class="submodule-features">
+                            <li>Real-time asset tracking & performance monitoring</li>
+                            <li>Predictive maintenance scheduling</li>
+                            <li>Asset lifecycle management</li>
+                            <li>Downtime alerts & analytics</li>
+                        </ul>
+                    </div>
+
+                    <!-- Security -->
+                    <div class="submodule-card">
+                        <div class="submodule-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Security</h3>
+                        <p>Enterprise-grade security with role-based access control, multi-level authentication, and comprehensive audit trails.</p>
+                        <ul class="submodule-features">
+                            <li>Role-based access control (RBAC)</li>
+                            <li>Multi-factor authentication</li>
+                            <li>Encryption & data protection</li>
+                            <li>Compliance management</li>
+                        </ul>
+                    </div>
+
+                    <!-- Surveillance -->
+                    <div class="submodule-card">
+                        <div class="submodule-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Surveillance</h3>
+                        <p>Integrated video surveillance with AI-powered analytics for enhanced security and operational monitoring.</p>
+                        <ul class="submodule-features">
+                            <li>Real-time video monitoring</li>
+                            <li>AI-powered threat detection</li>
+                            <li>Incident recording & playback</li>
+                            <li>Integration with access control</li>
+                        </ul>
+                    </div>
+
+                    <!-- Utilities Monitoring -->
+                    <div class="submodule-card">
+                        <div class="submodule-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Utilities Monitoring</h3>
+                        <p>Monitor and optimize consumption of electricity, water, gas, and other utilities to reduce costs and environmental impact.</p>
+                        <ul class="submodule-features">
+                            <li>Real-time utility consumption tracking</li>
+                            <li>Cost analysis & optimization</li>
+                            <li>Anomaly detection & alerts</li>
+                            <li>Sustainability reporting</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="product-features">
-            <div class="container-fluid">
-                <div class="features-content">
-                    <div class="features-list">
-                        <h2>Power-Packed Features You'll Love</h2>
-                        <div class="feature-item">Real-time asset tracking & performance monitoring</div>
-                        <div class="feature-item">Predictive maintenance scheduling</div>
-                        <div class="feature-item">Downtime alerts & performance analytics</div>
-                        <div class="feature-item">Asset lifecycle management</div>
-                    </div>
-                    <div class="features-image">
-                        <img src="assets/svg/AssetFrame1.svg" alt="Features Dashboard">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Lifecycle Management Section -->
-        <section class="lifecycle-section">
-            <div class="container-fluid"></div>
-            <div class="lifecycle-content">
-                <div class="lifecycle-image">
-                    <img src="assets/svg/AssetFrame2.svg" alt="Asset Lifecycle">
-                </div>
-                <div class="lifecycle-text">
-                    <h2>Seamless Asset Lifecycle Management</h2>
-                    <p>Effortlessly manage every phase of your asset's journey — from onboarding to retirement. With
-                        PlantIQX, add and distribute assets features, you can register new equipment instantly, assign
-                        them to departments, and track their entire lifecycle with real-time updates.</p>
-                    <p>Whether it's monitoring performance, scheduling maintenance, or retiring outdated kit from active
-                        use with optimal documentation and compliance.</p>
-
-                    <div class="lifecycle-features">
-                        <div class="lifecycle-feature-item">Quick registration and configuration of new assets</div>
-                        <div class="lifecycle-feature-item">Easy withdrawal process with full traceability</div>
-                        <div class="lifecycle-feature-item">Automated updates to asset inventory and records</div>
-                        <div class="lifecycle-feature-item">Real-time synchronization across departments</div>
-                    </div>
-
-                    <div class="lifecycle-highlight">
-                        Stay organized, compliant, and efficient — manage your industrial assets with precision and
-                        control.
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <!-- Asset Details Section -->
-        <section class="asset-details-section">
+        <!-- Automation Section -->
+        <section id="automation-section" class="main-section">
             <div class="container">
-                <div class="asset-details-image">
-                    <img src="assets/svg/AssetDetails.svg" alt="Asset Details">
+                <div class="section-header">
+                    <div class="section-label">Automation</div>
+                    <h2>Industrial Automation & Control Systems</h2>
+                    <p>Advanced automation technologies for seamless industrial control and monitoring</p>
                 </div>
-                <div class="asset-details-content">
-                    <div class="asset-details-text">
-                        <h2>Access Every Detail.<br>Control Every Update.</h2>
-                        <p>Gain complete visibility and control over every asset in your system. The View & Edit Assets
-                            feature in PlantIQX allows you to access detailed asset profiles, update critical
-                            information, and manage asset data in real-time.</p>
-                        <p>Whether you need to review an asset's operational history, update its status, or track its
-                            performance metrics, everything is just a click away.</p>
 
-                        <div class="asset-highlight">
-                            Keep every detail organized, accurate, and accessible — ensuring your operations stay
-                            informed, agile, and compliant.
+                <div class="submodules-grid">
+                    <!-- PLC -->
+                    <div class="submodule-card">
+                        <div class="submodule-icon">
+                            <i class="fas fa-microchip"></i>
                         </div>
-                    </div>
-                    <div class="asset-info-list">
-                        <div class="asset-info-item">
-                            <h4>Asset Details</h4>
-                            <p>View comprehensive asset profiles, including specifications, location, and current
-                                operational status.</p>
-                        </div>
-                        <div class="asset-info-item">
-                            <h4>Asset History</h4>
-                            <p>Analyze past performance, maintenance records, and usage trends for smarter
-                                decision-making.</p>
-                        </div>
-                        <div class="asset-info-item">
-                            <h4>Asset Documents</h4>
-                            <p>Store and access essential files such as manuals, warranty papers, calibration reports,
-                                and compliance certificates.</p>
-                        </div>
-                        <div class="asset-info-item">
-                            <h4>Activity Log</h4>
-                            <p>Track every action taken on the asset — from maintenance updates to user interactions —
-                                ensuring full transparency and accountability.</p>
-                        </div>
-                        <div class="asset-info-item">
-                            <h4>Edit Asset Details</h4>
-                            <p>Effortlessly update information, assign departments, or modify asset parameters while
-                                maintaining complete change control.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Final Features Section -->
-        <section class="final-features-section">
-            <div class="container">
-                <div class="section-label">More Features</div>
-                <h2>Powerful Features That Deliver Results</h2>
-
-                <div class="final-features-grid">
-                    <div class="final-feature-card">
-                        <div class="final-feature-icon">
-                            <img src="assets/svg/Complaint.svg" alt="">
-                        </div>
-                        <h3>Complaint</h3>
-                        <p>Seamlessly integrates with your existing systems and infrastructure for smooth operations.
-                        </p>
+                        <h3>PLC</h3>
+                        <h4>Programming Logic Control</h4>
+                        <p>Robust programmable logic controllers for reliable industrial automation and process control.</p>
+                        <ul class="submodule-features">
+                            <li>Real-time process control</li>
+                            <li>Flexible programming options</li>
+                            <li>High reliability & durability</li>
+                            <li>Seamless integration capabilities</li>
+                        </ul>
                     </div>
 
-                    <div class="final-feature-card">
-                        <div class="final-feature-icon">
-                            <img src="assets/svg/BreakDown.svg" alt="">
-
+                    <!-- SCADA -->
+                    <div class="submodule-card">
+                        <div class="submodule-icon">
+                            <i class="fas fa-desktop"></i>
                         </div>
-                        <h3>BreakDown</h3>
-                        <p>Grows with your business, handling increased data and assets without compromising
-                            performance.</p>
+                        <h3>SCADA</h3>
+                        <h4>Supervisory Control and Data Acquisition</h4>
+                        <p>Comprehensive supervisory control systems for monitoring and managing industrial processes at scale.</p>
+                        <ul class="submodule-features">
+                            <li>Centralized monitoring & control</li>
+                            <li>Real-time data acquisition</li>
+                            <li>Historical data logging</li>
+                            <li>Alarm management & reporting</li>
+                        </ul>
                     </div>
 
-                    <div class="final-feature-card">
-                        <div class="final-feature-icon">
-                            <img src="assets/svg/WorkOrder.svg" alt="">
-
+                    <!-- VFD -->
+                    <div class="submodule-card">
+                        <div class="submodule-icon">
+                            <i class="fas fa-tachometer-alt"></i>
                         </div>
-                        <h3>Work Order</h3>
-                        <p>Leverages real-time analytics and insights to optimize asset performance and decision-making.
-                        </p>
+                        <h3>VFD</h3>
+                        <h4>Variable Frequency Drive</h4>
+                        <p>Precision motor control for energy efficiency and optimal performance in industrial applications.</p>
+                        <ul class="submodule-features">
+                            <li>Energy-efficient motor control</li>
+                            <li>Speed & torque optimization</li>
+                            <li>Soft start/stop capabilities</li>
+                            <li>Reduced mechanical stress</li>
+                        </ul>
                     </div>
 
-                    <div class="final-feature-card">
-                        <div class="final-feature-icon">
-                            <img src="assets/svg/PreventiveMaintenances.svg" alt="">
-
+                    <!-- HMI -->
+                    <div class="submodule-card">
+                        <div class="submodule-icon">
+                            <i class="fas fa-hand-pointer"></i>
                         </div>
-                        <h3>Preventive Maintenances</h3>
-                        <p>Simplifies maintenance workflows with predictive alerts and automated scheduling for maximum
-                            uptime.</p>
+                        <h3>HMI</h3>
+                        <h4>Human Machine Interface</h4>
+                        <p>Intuitive interfaces for seamless interaction between operators and industrial systems.</p>
+                        <ul class="submodule-features">
+                            <li>User-friendly touchscreen interfaces</li>
+                            <li>Real-time visualization</li>
+                            <li>Customizable dashboards</li>
+                            <li>Remote access capabilities</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ Section -->
-        <section id="faq" class="faq-section">
+        <!-- Solutions Section -->
+        <section id="solutions-section" class="main-section">
             <div class="container">
-                <h2 class="section-title text-center">Frequently Asked Questions</h2>
+                <div class="section-header">
+                    <div class="section-label">Solutions</div>
+                    <h2>Intelligent Industrial Solutions</h2>
+                    <p>AI-powered solutions for predictive insights and operational excellence</p>
+                </div>
 
-                <div class="faq-accordion">
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q1: What is PlantIQX?</h5>
-                            <i class="fas fa-plus"></i>
+                <div class="submodules-grid">
+                    <!-- Predictive Maintenance -->
+                    <div class="submodule-card">
+                        <div class="submodule-icon">
+                            <img src="assets/svg/PreventiveMaintenances.svg" alt="Predictive Maintenance">
                         </div>
-                        <div class="accordion-content">
-                            <p>PlantIQX is an intelligent industrial operations platform that combines AI, IoT, and
-                                analytics to help manufacturers optimize their production processes, reduce downtime,
-                                and improve overall equipment effectiveness (OEE).</p>
-                        </div>
+                        <h3>Predictive Maintenance</h3>
+                        <p>AI-driven predictive analytics to anticipate equipment failures before they happen and minimize unplanned downtime.</p>
+                        <ul class="submodule-features">
+                            <li>Machine learning-based predictions</li>
+                            <li>Failure pattern recognition</li>
+                            <li>Automated maintenance scheduling</li>
+                            <li>ROI optimization</li>
+                        </ul>
                     </div>
 
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q2: How does PlantIQX integrate with existing systems?</h5>
-                            <i class="fas fa-plus"></i>
+                    <!-- Condition Monitoring -->
+                    <div class="submodule-card">
+                        <div class="submodule-icon">
+                            <i class="fas fa-heartbeat"></i>
                         </div>
-                        <div class="accordion-content">
-                            <p>PlantIQX seamlessly integrates with your existing equipment and systems through standard
-                                industrial protocols and APIs. Our team provides full support during the integration
-                                process to ensure minimal disruption to your operations.</p>
-                        </div>
+                        <h3>Condition Monitoring</h3>
+                        <p>Continuous monitoring of equipment health through vibration analysis, temperature sensing, and performance metrics.</p>
+                        <ul class="submodule-features">
+                            <li>Real-time health monitoring</li>
+                            <li>Vibration & temperature analysis</li>
+                            <li>Early fault detection</li>
+                            <li>Performance trending</li>
+                        </ul>
                     </div>
 
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q3: What industries does PlantIQX serve?</h5>
-                            <i class="fas fa-plus"></i>
+                    <!-- Vision AI -->
+                    <div class="submodule-card">
+                        <div class="submodule-icon">
+                            <i class="fas fa-eye"></i>
                         </div>
-                        <div class="accordion-content">
-                            <p>PlantIQX serves a wide range of industries including automotive, pharmaceuticals, food &
-                                beverage, electronics, and general manufacturing. Our platform is customizable to meet
-                                the specific needs of different industrial sectors.</p>
-                        </div>
+                        <h3>Vision AI</h3>
+                        <p>Computer vision and AI-powered visual inspection for quality control, defect detection, and process optimization.</p>
+                        <ul class="submodule-features">
+                            <li>Automated visual inspection</li>
+                            <li>Defect detection & classification</li>
+                            <li>Quality assurance automation</li>
+                            <li>Real-time anomaly detection</li>
+                        </ul>
                     </div>
 
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q4: How does the pricing work for PlantIQX?</h5>
-                            <i class="fas fa-plus"></i>
+                    <!-- Energy Management System -->
+                    <div class="submodule-card">
+                        <div class="submodule-icon">
+                            <i class="fas fa-leaf"></i>
                         </div>
-                        <div class="accordion-content">
-                            <p>We offer flexible pricing models based on your facility size, number of users, and
-                                required features. Contact our sales team for a customized quote that fits your specific
-                                needs and budget.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q5: What kind of support does PlantIQX offer?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>We provide 24/7 technical support, dedicated account managers, regular training sessions,
-                                and comprehensive documentation. Our team is committed to ensuring your success with
-                                PlantIQX.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q6: Is the data secure with PlantIQX?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Yes, security is our top priority. PlantIQX uses enterprise-grade encryption, role-based
-                                access control, and complies with industry standards including ISO 27001 and SOC 2.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q7: Can I try PlantIQX before purchasing?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Absolutely! We offer a free demo and trial period so you can experience the platform
-                                firsthand. Contact us to schedule a personalized demonstration.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q8: How long does implementation take?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Implementation timelines vary based on facility size and complexity, but typically range
-                                from 4-12 weeks. Our team works closely with you to ensure a smooth and efficient
-                                deployment.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q9: What training is provided for users?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>We provide comprehensive training including on-site sessions, online courses, video
-                                tutorials, and documentation. We ensure your team is fully equipped to maximize the
-                                value of PlantIQX.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q10: Can PlantIQX scale as our business grows?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Yes, PlantIQX is built to scale. Whether you're adding new production lines, facilities,
-                                or expanding globally, our platform grows with your business needs.</p>
-                        </div>
+                        <h3>Energy Management System</h3>
+                        <p>Comprehensive energy monitoring and optimization to reduce costs and achieve sustainability goals.</p>
+                        <ul class="submodule-features">
+                            <li>Real-time energy consumption tracking</li>
+                            <li>Cost optimization strategies</li>
+                            <li>Carbon footprint reduction</li>
+                            <li>Sustainability reporting</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -362,7 +287,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/accordion.js"></script>
+    <script src="js/products-tabs.js"></script>
     <script src="js/navigation.js"></script>
 </body>
 

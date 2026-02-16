@@ -611,3 +611,170 @@
         padding: 60px 0;
     }
 }
+/* Ma
+in Sections */
+.main-section {
+    display: none;
+    padding: 80px 0;
+}
+
+.main-section.active {
+    display: block;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Submodules Grid */
+.submodules-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.submodule-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.submodule-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(108, 92, 231, 0.15);
+    border-color: var(--primary-color);
+}
+
+.submodule-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #F8F9FA 0%, #E8E9EB 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+}
+
+.submodule-card:hover .submodule-icon {
+    background: linear-gradient(135deg, #6C5CE7 0%, #5B4CD6 100%);
+    transform: scale(1.1);
+}
+
+.submodule-icon img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.submodule-card:hover .submodule-icon img {
+    filter: brightness(0) invert(1);
+}
+
+.submodule-icon i {
+    font-size: 40px;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.submodule-card:hover .submodule-icon i {
+    color: var(--white);
+}
+
+.submodule-card h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.submodule-card h4 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-light);
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+.submodule-card > p {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.submodule-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submodule-features li {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.submodule-features li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .submodules-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-section {
+        padding: 60px 0;
+    }
+    
+    .submodule-card {
+        padding: 30px 20px;
+    }
+    
+    .submodule-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .section-header {
+        margin-bottom: 40px;
+    }
+}

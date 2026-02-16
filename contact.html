@@ -69,48 +69,54 @@
                     <!-- Right Side - Contact Form -->
                     <div class="contact-form">
                         <div class="section-label">Fill Out the Form</div>
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label>Full Name *</label>
-                                    <input type="text" placeholder="Enter Your Full Name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Contact Email *</label>
-                                    <input type="email" placeholder="Enter Your Email Address" required>
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label>Email *</label>
-                                    <input type="email" placeholder="Enter Your Email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Contact Number *</label>
-                                    <input type="tel" placeholder="+91 | Enter Your Mobile Number" required>
-                                </div>
+                        <form id="demoRequestForm">
+                            <div class="form-group">
+                                <label>Full Name *</label>
+                                <input type="text" name="fullName" placeholder="Enter Your Full Name" required>
                             </div>
 
                             <div class="form-group">
-                                <label>Modules Interested</label>
-                                <div class="module-tags">
-                                    <button type="button" class="module-tag active">Assets Management</button>
-                                    <button type="button" class="module-tag">User Management</button>
-                                    <button type="button" class="module-tag">IoT Integration</button>
-                                    <button type="button" class="module-tag">Security & Administration</button>
-                                    <button type="button" class="module-tag">Enterprise Integration</button>
-                                    <button type="button" class="module-tag">Reports & Analytics</button>
-                                </div>
+                                <label>Company Name *</label>
+                                <input type="text" name="companyName" placeholder="Enter Your Company Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Business Email Address *</label>
+                                <input type="email" name="businessEmail" placeholder="Enter Your Business Email Address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Mobile Number *</label>
+                                <input type="tel" name="mobileNumber" placeholder="+91 | Enter Your Mobile Number" required>
                             </div>
 
                             <div class="form-group">
                                 <label>Message (Optional)</label>
-                                <textarea rows="4" placeholder="Enter Your Message"></textarea>
+                                <textarea name="message" rows="4" placeholder="Enter Your Message"></textarea>
                             </div>
 
                             <button type="submit" class="submit-btn">Submit</button>
                         </form>
+
+                        <!-- Thank You Message (Hidden by default) -->
+                        <div id="thankYouMessage" class="thank-you-message" style="display: none;">
+                            <div class="thank-you-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Thank You — Request Received!</h3>
+                            <p class="thank-you-text">Your details have been submitted successfully. Our PlantIQX expert team will contact you shortly.</p>
+                            
+                            <div class="what-happens-next">
+                                <h4>What happens next:</h4>
+                                <ul>
+                                    <li>We review your requirement</li>
+                                    <li>Our expert will reach out within one business day</li>
+                                    <li>A demo / consultation will be scheduled at your convenience</li>
+                                </ul>
+                            </div>
+
+                            <button class="btn-back-to-form" onclick="resetForm()">Submit Another Request</button>
+                        </div>
                     </div>
                 </div>
             </div>

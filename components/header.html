@@ -1,43 +1,139 @@
+
+<!-- Header Section -->
 <header class="header-section">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <div class="container">
-            <a class="navbar-brand header-brand me-4" href="index.html">
-                <img src="assets/svg/plantiqx-final-logo.svg" alt="PlantIQX" class="header-logo">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+      <a class="navbar-brand header-brand me-4" href="index.html">
+        <img
+          src="assets/svg/plantiqx-final-logo.svg"
+          alt="PlantIQX"
+          class="header-logo"
+        />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav header-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link header-nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link header-nav-link" href="products.html">
+              Product and Solutions
             </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav header-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link header-nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header-nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header-nav-link" href="products.html">Our Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header-nav-link" href="news.html">News & Announcements</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header-nav-link" href="career.html">Career</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header-nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-                <div class="d-flex align-items-center header-buttons ms-4">
-                    <a href="demo.html" class="btn btn-demo header-btn-demo me-2">
-                        Request For Demo 
-                        <img src="assets/svg/UpArrow.svg" alt="Arrow" class="btn-arrow ms-2">
-                    </a>
-                    <a href="login.html" class="btn btn-login header-btn-login">Login Now</a>
-                </div>
-            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link header-nav-link" href="career.html">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link header-nav-link" href="contact.html">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center header-buttons ms-4">
+          <a
+            href="#"
+            class="btn btn-demo header-btn-demo me-2"
+            data-bs-toggle="modal"
+            data-bs-target="#demoModal"
+          >
+            Request For Demo
+            <img
+              src="assets/svg/UpArrow.svg"
+              alt="Arrow"
+              class="btn-arrow ms-2"
+            />
+          </a>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 </header>
+
+<!-- Demo Request Modal -->
+<div class="modal fade" id="demoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Request For Demo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="contact-form">
+          <form id="demoRequestForm">
+            
+            <div class="form-group mb-3">
+              <label>Full Name *</label>
+              <input type="text" class="form-control" name="fullName" placeholder="Enter Your Full Name" required>
+            </div>
+
+            <div class="form-group mb-3">
+              <label>Company Name *</label>
+              <input type="text" class="form-control" name="companyName" placeholder="Enter Your Company Name" required>
+            </div>
+
+            <div class="form-group mb-3">
+              <label>Business Email Address *</label>
+              <input type="email" class="form-control" name="businessEmail" placeholder="Enter Your Business Email Address" required>
+            </div>
+
+            <div class="form-group mb-3">
+              <label>Mobile Number *</label>
+              <input type="tel" class="form-control" name="mobileNumber" placeholder="+91 | Enter Your Mobile Number" required>
+            </div>
+
+            <div class="form-group mb-3">
+              <label>Message (Optional)</label>
+              <textarea class="form-control" name="message" rows="4" placeholder="Enter Your Message"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Submit</button>
+
+          </form>
+
+          <!-- Thank You Message -->
+          <div id="thankYouMessage" class="thank-you-message text-center" style="display: none;">
+            <div class="thank-you-icon mb-3">
+              <i class="fas fa-check-circle text-success fa-3x"></i>
+            </div>
+
+            <h3>Thank You — Request Received!</h3>
+
+            <p class="thank-you-text">
+              Your details have been submitted successfully.
+              Our PlantIQX expert team will contact you shortly.
+            </p>
+
+            <div class="what-happens-next text-start mt-3">
+              <h5>What happens next:</h5>
+              <ul>
+                <li>We review your requirement</li>
+                <li>Our expert will reach out within one business day</li>
+                <li>A demo / consultation will be scheduled at your convenience</li>
+              </ul>
+            </div>
+
+            <button class="btn btn-outline-primary mt-3" onclick="resetForm()">
+              Submit Another Request
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -30,91 +30,100 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Hero Section with Slider -->
-        <section id="hero" class="hero-section">
-            <div class="hero-slider">
-                <!-- Slide 1 -->
-                <div class="slide active">
-                    <div class="hero-overlay"></div>
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&h=1080&fit=crop"
-                        alt="Equipment Breakdown" class="hero-bg">
-                    <div class="container">
-                        <div class="row align-items-center" style="min-height: 100vh;">
-                            <div class="col-lg-7">
-                                <div class="hero-content">
-                                    <h1 class="hero-title">Respond Faster to Equipment Breakdowns</h1>
-                                    <p class="hero-description">Minimize downtime and keep operations running smoothly.
-                                        Report, track, and resolve breakdowns efficiently with real-time alerts and
-                                        predictive insights.</p>
-                                    <button class="btn btn-hero">See The Difference</button>
-                                </div>
-                            </div>
+        <!-- Hero Section with PlantIQX Logo -->
+        <section id="hero" class="hero-section-home">
+            <div class="hero-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&h=1080&fit=crop"
+                alt="PlantIQX Industrial Solutions" class="hero-bg">
+            <div class="container">
+                <div class="row align-items-center justify-content-center" style="min-height: 100vh;">
+                    <div class="col-lg-8 text-center">
+                        <div class="hero-logo-container">
+                            <img src="assets/svg/PlantiqX-final-logo.svg" alt="PlantIQX Logo" class="hero-logo">
+                            <h1 class="hero-tagline">Where Minds and Machines Merge</h1>
+                            <p class="hero-subtitle">Intelligent Industrial Operations Platform</p>
                         </div>
-                    </div>
-                    <div class="slider-controls">
-                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
-                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <div class="slider-indicators">
-                        <span class="indicator active"></span>
-                        <span class="indicator"></span>
-                        <span class="indicator"></span>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Slide 2 -->
-                <div class="slide">
-                    <div class="hero-overlay"></div>
-                    <img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1920&h=1080&fit=crop"
-                        alt="Smart Technology" class="hero-bg">
-                    <div class="container">
-                        <div class="row align-items-center" style="min-height: 100vh;">
-                            <div class="col-lg-7">
-                                <div class="hero-content">
-                                    <h1 class="hero-title">Smart Technology for Modern Industries</h1>
-                                    <p class="hero-description">Transform your operations with AI-powered insights and
-                                        automation that drives efficiency and productivity.</p>
-                                    <button class="btn btn-hero">Learn More</button>
-                                </div>
+        <!-- Key Modules Banner with Glimpses -->
+        <section id="modules-banner" class="modules-banner-section">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Core Modules Overview</h2>
+                <div class="modules-banner-grid">
+                    <div class="module-banner-card">
+                        <div class="module-glimpse-image" onclick="openImagePopup('assets/images/AssetManegement.png', 'Asset Management Dashboard')">
+                            <img src="assets/images/AssetManegement.png" alt="Asset Management Dashboard">
+                        </div>
+                        <div class="module-info">
+                            <div class="module-icon-small">
+                                <img src="assets/svg/Assets.svg" alt="Asset Management">
                             </div>
+                            <h4>Asset Management</h4>
+                            <!-- <p>Track and manage your assets with complete visibility and control</p> -->
                         </div>
                     </div>
-                    <div class="slider-controls">
-                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
-                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <div class="slider-indicators">
-                        <span class="indicator"></span>
-                        <span class="indicator active"></span>
-                        <span class="indicator"></span>
-                    </div>
-                </div>
 
-                <!-- Slide 3 -->
-                <div class="slide">
-                    <div class="hero-overlay"></div>
-                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&h=1080&fit=crop"
-                        alt="Industry Solutions" class="hero-bg">
-                    <div class="container">
-                        <div class="row align-items-center" style="min-height: 100vh;">
-                            <div class="col-lg-7">
-                                <div class="hero-content">
-                                    <h1 class="hero-title">Empowering Industries Through Innovation</h1>
-                                    <p class="hero-description">Discover how PlantIQX revolutionizes industrial
-                                        operations with cutting-edge technology and intelligent solutions.</p>
-                                    <button class="btn btn-hero">Get Started</button>
-                                </div>
+                    <div class="module-banner-card">
+                        <div class="module-glimpse-image" onclick="openImagePopup('assets/images/Compliant.png', 'Complaints Dashboard')">
+                            <img src="assets/images/Compliant.png" alt="Complaints Dashboard">
+                        </div>
+                        <div class="module-info">
+                            <div class="module-icon-small">
+                                <img src="assets/svg/Complaint.svg" alt="Complaints">
                             </div>
+                            <h4>Complaints</h4>
+                            <!-- <p>Streamline complaint handling and resolution processes</p> -->
                         </div>
                     </div>
-                    <div class="slider-controls">
-                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
-                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+
+                    <div class="module-banner-card">
+                        <div class="module-glimpse-image" onclick="openImagePopup('assets/images/BreakDown.png', 'Breakdowns Dashboard')">
+                            <img src="assets/images/BreakDown.png" alt="Breakdowns Dashboard">
+                        </div>
+                        <div class="module-info">
+                            <div class="module-icon-small">
+                                <img src="assets/svg/BreakDown.svg" alt="Breakdowns">
+                            </div>
+                            <h4>Breakdowns</h4>
+                            <!-- <p>Respond faster to equipment failures and minimize downtime</p> -->
+                        </div>
                     </div>
-                    <div class="slider-indicators">
-                        <span class="indicator"></span>
-                        <span class="indicator"></span>
-                        <span class="indicator active"></span>
+
+                    <div class="module-banner-card">
+                        <div class="module-glimpse-image" onclick="openImagePopup('assets/images/PreventiveMaintance.png', 'Preventive Maintenance Dashboard')">
+                            <img src="assets/images/PreventiveMaintance.png" alt="Preventive Maintenance Dashboard">
+                        </div>
+                        <div class="module-info">
+                            <div class="module-icon-small">
+                                <img src="assets/svg/PreventiveMaintenances.svg" alt="Preventive Maintenance">
+                            </div>
+                            <h4>Preventive Maintenance</h4>
+                            <!-- <p>Schedule and track maintenance to prevent equipment failures</p> -->
+                        </div>
+                    </div>
+
+                    <!-- Work Order Card - Commented out for now -->
+                    <!-- 
+                    <div class="module-banner-card">
+                        <div class="module-glimpse-placeholder">
+                            <div class="placeholder-content">
+                                <img src="assets/svg/WorkOrder.svg" alt="Work Order" class="placeholder-icon">
+                                <p>Work Order Dashboard Coming Soon</p>
+                            </div>
+                        </div>
+                        <div class="module-info">
+                            <div class="module-icon-small">
+                                <img src="assets/svg/WorkOrder.svg" alt="Work Order">
+                            </div>
+                            <h4>Work Order</h4>
+                            <p>Manage work orders efficiently from creation to completion</p>
+                        </div>
+                    </div>
+                    -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -169,12 +178,6 @@
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <img src="assets/svg/Automatic.svg" alt="Automatic Payments">
-                        </div>
-                        <h5>Automatic Payments</h5>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
                             <img src="assets/svg/Advance.svg" alt="Advance Analytics">
                         </div>
                         <h5>Advance Analytics</h5>
@@ -184,24 +187,6 @@
                             <img src="assets/svg/CloudTechnology.svg" alt="Cloud Technology">
                         </div>
                         <h5>Cloud Technology</h5>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <img src="assets/svg/Geospatil.svg" alt="Geospatial Engineering">
-                        </div>
-                        <h5>Geospatial Engineering</h5>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <img src="assets/svg/UserExperiance.svg" alt="User Experience">
-                        </div>
-                        <h5>User Experience</h5>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <img src="assets/svg/BlockChain.svg" alt="Blockchain">
-                        </div>
-                        <h5>Blockchain</h5>
                     </div>
                 </div>
             </div>
@@ -386,350 +371,28 @@
             </div>
         </section>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials-section">
-            <div class="container">
-                <h2 class="section-title text-center">Our Clients Speak for Our Excellence</h2>
-
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <img src="https://i.pravatar.cc/150?img=12" alt="Client" class="testimonial-avatar">
-                            <div>
-                                <h5 class="testimonial-name">John Smith</h5>
-                                <p class="testimonial-position">Operations Manager</p>
-                            </div>
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <span>4.5</span>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">"PlantIQX has transformed our manufacturing process. The real-time
-                            insights and predictive analytics have helped us reduce downtime by 40%."</p>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <img src="https://i.pravatar.cc/150?img=47" alt="Client" class="testimonial-avatar">
-                            <div>
-                                <h5 class="testimonial-name">Sarah Johnson</h5>
-                                <p class="testimonial-position">Plant Director</p>
-                            </div>
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <span>5.0</span>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">"The integration was seamless and the support team is outstanding.
-                            We've seen immediate improvements in our OEE metrics."</p>
-                    </div>
-
-                    <div class="testimonial-card featured">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop"
-                            alt="Featured Client" class="testimonial-featured-image">
-                        <div class="testimonial-overlay">
-                            <div class="testimonial-header">
-                                <img src="https://i.pravatar.cc/150?img=33" alt="Client" class="testimonial-avatar">
-                                <div>
-                                    <h5 class="testimonial-name">Michael Chen</h5>
-                                    <p class="testimonial-position">CEO, Manufacturing Corp</p>
-                                </div>
-                                <div class="testimonial-rating">
-                                    <i class="fas fa-star"></i>
-                                    <span>5.0</span>
-                                </div>
-                            </div>
-                            <p class="testimonial-text">"PlantIQX is not just software, it's a game-changer for
-                                industrial operations."</p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <img src="https://i.pravatar.cc/150?img=27" alt="Client" class="testimonial-avatar">
-                            <div>
-                                <h5 class="testimonial-name">Emily Rodriguez</h5>
-                                <p class="testimonial-position">Production Manager</p>
-                            </div>
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <span>4.8</span>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">"The AI-powered insights have given us a competitive edge. We can
-                            now predict issues before they become problems."</p>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <img src="https://i.pravatar.cc/150?img=68" alt="Client" class="testimonial-avatar">
-                            <div>
-                                <h5 class="testimonial-name">David Park</h5>
-                                <p class="testimonial-position">Maintenance Lead</p>
-                            </div>
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <span>4.9</span>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">"Best investment we've made. The ROI was evident within the first
-                            quarter of implementation."</p>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <img src="https://i.pravatar.cc/150?img=49" alt="Client" class="testimonial-avatar">
-                            <div>
-                                <h5 class="testimonial-name">Lisa Anderson</h5>
-                                <p class="testimonial-position">Quality Assurance Director</p>
-                            </div>
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <span>5.0</span>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">"The quality control features have helped us maintain consistent
-                            standards across all production lines."</p>
-                    </div>
-                </div>
-
-                <div class="text-center mt-5">
-                    <button class="btn btn-dark">View More Reviews</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- News & Announcements Section -->
-        <section id="news" class="news-section">
-            <div class="container">
-                <div class="news-header">
-                    <span class="section-label">News & Announcements</span>
-                    <h2 class="section-title text-center">Updates That Shape the Future of Industry</h2>
-                </div>
-
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="news-card">
-                            <div class="news-image-placeholder"></div>
-                            <div class="news-content">
-                                <div class="news-meta">
-                                    <i class="far fa-calendar"></i>
-                                    <span>28 October 2025 | Time: 10:00 AM</span>
-                                </div>
-                                <h5 class="news-title">How Smart Factories are Revolutionizing Industrial Operations
-                                </h5>
-                                <p class="news-excerpt">Smart factories are no longer a futuristic concept — they are
-                                    here, and they are transforming industrial operations. By integr...</p>
-                                <a href="#" class="news-link">Read More <i class="fas fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="news-card">
-                            <div class="news-image-placeholder"></div>
-                            <div class="news-content">
-                                <div class="news-meta">
-                                    <i class="far fa-calendar"></i>
-                                    <span>15 October 2025 | Time: 11:30 AM</span>
-                                </div>
-                                <h5 class="news-title">5 Ways IoT Integration is Driving Industrial Efficiency</h5>
-                                <p class="news-excerpt">IoT integration is the backbone of modern industrial operations.
-                                    By connecting devices and enabling...</p>
-                                <a href="#" class="news-link">Read More <i class="fas fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="news-card">
-                            <div class="news-image-placeholder"></div>
-                            <div class="news-content">
-                                <div class="news-meta">
-                                    <i class="far fa-calendar"></i>
-                                    <span>5 October 2025 | Time: 2:00 PM</span>
-                                </div>
-                                <h5 class="news-title">Predictive Analytics: Reducing Downtime and Boosting Productivity
-                                </h5>
-                                <p class="news-excerpt">Predictive analytics is transforming how industries maintain
-                                    their assets. By analyzing historical and real-time data, potent...</p>
-                                <a href="#" class="news-link">Read More <i class="fas fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="news-card featured">
-                            <div class="news-image-featured">
-                                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop"
-                                    alt="Featured News">
-                            </div>
-                            <div class="news-content">
-                                <div class="news-meta">
-                                    <i class="far fa-calendar"></i>
-                                    <span>1 October 2025 | Time: 9:45 AM</span>
-                                </div>
-                                <h5 class="news-title">Data-Driven Decisions: The Key to Modern Industrial Success</h5>
-                                <p class="news-excerpt">In today's fast-paced industrial environment, data is the most
-                                    valuable asset. Making decisions without insights is akin to drivin...</p>
-                                <a href="#" class="news-link">Read More <i class="fas fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center mt-5">
-                    <button class="btn btn-dark">View All <i class="fas fa-arrow-right ms-2"></i></button>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="faq-section">
-            <div class="container">
-                <h2 class="section-title text-center">Frequently Asked Questions</h2>
-
-                <div class="faq-accordion">
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q1: What is PlantIQX?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>PlantIQX is an intelligent industrial operations platform that combines AI, IoT, and
-                                analytics to help manufacturers optimize their production processes, reduce downtime,
-                                and improve overall equipment effectiveness (OEE).</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q2: How does PlantIQX integrate with existing systems?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>PlantIQX seamlessly integrates with your existing equipment and systems through standard
-                                industrial protocols and APIs. Our team provides full support during the integration
-                                process to ensure minimal disruption to your operations.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q3: What industries does PlantIQX serve?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>PlantIQX serves a wide range of industries including automotive, pharmaceuticals, food &
-                                beverage, electronics, and general manufacturing. Our platform is customizable to meet
-                                the specific needs of different industrial sectors.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q4: How does the pricing work for PlantIQX?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>We offer flexible pricing models based on your facility size, number of users, and
-                                required features. Contact our sales team for a customized quote that fits your specific
-                                needs and budget.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q5: What kind of support does PlantIQX offer?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>We provide 24/7 technical support, dedicated account managers, regular training sessions,
-                                and comprehensive documentation. Our team is committed to ensuring your success with
-                                PlantIQX.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q6: Is the data secure with PlantIQX?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Yes, security is our top priority. PlantIQX uses enterprise-grade encryption, role-based
-                                access control, and complies with industry standards including ISO 27001 and SOC 2.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q7: Can I try PlantIQX before purchasing?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Absolutely! We offer a free demo and trial period so you can experience the platform
-                                firsthand. Contact us to schedule a personalized demonstration.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q8: How long does implementation take?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Implementation timelines vary based on facility size and complexity, but typically range
-                                from 4-12 weeks. Our team works closely with you to ensure a smooth and efficient
-                                deployment.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q9: What training is provided for users?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>We provide comprehensive training including on-site sessions, online courses, video
-                                tutorials, and documentation. We ensure your team is fully equipped to maximize the
-                                value of PlantIQX.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h5>Q10: Can PlantIQX scale as our business grows?</h5>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Yes, PlantIQX is built to scale. Whether you're adding new production lines, facilities,
-                                or expanding globally, our platform grows with your business needs.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-cta">
-                    <div class="faq-cta-content">
-                        <h4>Get started today and take the first step toward a smarter, more connected industrial
-                            future.</h4>
-                        <p>Experience the power of PlantIQX firsthand. See how real-time monitoring, predictive
-                            analytics, and intelligent automation can transform your operations.</p>
-                    </div>
-                    <button class="btn btn-primary request-buttonCta">Request For Demo
-                        <img src="assets/svg/UpArrow.svg" alt="Arrow" class="btn-arrow ms-2">
-                    </button>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
     <div id="footer-placeholder"></div>
 
+    <!-- Image Lightbox Popup -->
+    <div id="imageLightbox" class="lightbox-overlay" onclick="closeImagePopup()">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/navigation.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/accordion.js"></script>

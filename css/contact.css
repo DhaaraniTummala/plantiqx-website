@@ -448,3 +448,125 @@
         padding: 60px 0;
     }
 }
+/* 
+Thank You Message Styles */
+.thank-you-message {
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+.thank-you-icon {
+    margin-bottom: 24px;
+}
+
+.thank-you-icon i {
+    font-size: 80px;
+    color: #10B981;
+    animation: scaleIn 0.5s ease;
+}
+
+.thank-you-message h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+}
+
+.thank-you-text {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.what-happens-next {
+    background: #F8F9FA;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.what-happens-next h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+}
+
+.what-happens-next ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.what-happens-next ul li {
+    font-size: 1rem;
+    color: var(--text-dark);
+    padding: 12px 0;
+    padding-left: 32px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.what-happens-next ul li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.btn-back-to-form {
+    background: linear-gradient(26.57deg, #53389E 8.33%, #6941C6 91.67%);
+    color: var(--white);
+    border: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-back-to-form:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .thank-you-icon i {
+        font-size: 60px;
+    }
+    
+    .thank-you-message h3 {
+        font-size: 1.5rem;
+    }
+    
+    .what-happens-next {
+        padding: 20px;
+    }
+}
