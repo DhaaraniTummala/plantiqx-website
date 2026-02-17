@@ -1,0 +1,219 @@
+/* ===========================
+   Header Styles
+   =========================== */
+.header-section {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar {
+  padding: 0.7rem 0;
+  background: var(--white) !important;
+}
+
+.brand-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: -0.5px;
+}
+
+.brand-highlight {
+  color: var(--secondary-color);
+}
+
+.nav-link {
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin: 0 0.8rem;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Header Login Button */
+.header-login-btn {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.header-login-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(105, 65, 198, 0.2);
+}
+
+/* ===========================
+   Header Navigation Styles (Duplicate Block 1)
+   =========================== */
+.header-logo {
+  height: 35px;
+  width: auto;
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--primary-color);
+}
+
+.btn-demo {
+  background: linear-gradient(26.57deg, #53389e 8.33%, #6941c6 91.67%);
+  border: none;
+  color: var(--white);
+  padding: 1rem 1.8rem;
+  border-radius: 8px !important;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-demo img {
+  width: 80% !important;
+  height: 80% !important;
+}
+
+.btn-demo:hover {
+  background-color: #5b4cd6;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+  color: var(--white);
+}
+
+.btn-login {
+  background: #fb6514;
+  border: none;
+  color: var(--white);
+  padding: 1rem 1.8rem;
+  border-radius: 8px !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-login:hover {
+  background-color: #e68600;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 149, 0, 0.3);
+  color: var(--white);
+}
+
+/* ===========================
+   Header Specific Styles (Duplicate Block 2)
+   =========================== */
+.header-brand {
+  margin-right: 2rem;
+}
+
+.header-logo {
+  height: 35px;
+  width: auto;
+}
+
+.header-nav {
+  gap: 0;
+}
+
+.header-nav-link {
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 12px !important;
+  margin: 0 0.6rem !important;
+  padding: 0.5rem 0 !important;
+  position: relative;
+  transition: color 0.3s ease;
+  text-transform: capitalize;
+}
+
+.header-nav-link:hover {
+  color: var(--primary-color);
+}
+
+.header-nav-link.active {
+  color: var(--primary-color);
+}
+
+.header-nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--primary-color);
+}
+
+.header-buttons {
+  margin-left: 2rem;
+}
+
+.header-btn-demo {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--white);
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 11px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.header-btn-demo:hover {
+  background-color: #5b4cd6;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+  color: var(--white);
+}
+
+.header-btn-login {
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--white);
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 11px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header-btn-login:hover {
+  background-color: #e68600;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 149, 0, 0.3);
+  color: var(--white);
+}
