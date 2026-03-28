@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/chatbot.css">
 </head>
 
 <body>
@@ -24,7 +25,7 @@
     <!-- Main Content -->
     <main style="padding-top: 80px;">
 
-        <!-- Hero Section -->
+        <!-- Hero Section 
         <section class="products-hero">
             <div class="container">
                 <div class="section-label">Product and Solutions</div>
@@ -37,20 +38,20 @@
                     <button class="product-tab" data-section="solutions">Solutions</button>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <!-- Products Section -->
         <section id="products-section" class="main-section active">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-label">Products and Solutions</div>
+                    <div class="section-label">Automation</div>
                     <h2>Comprehensive Industrial Management Solutions</h2>
                     <p>Our product suite provides complete visibility and control over your industrial operations</p>
                 </div>
 
                 <div class="submodules-grid">
                     <!-- Asset Management -->
-                    <div class="submodule-card">
+                    <div class="submodule-card" id="asset-management">
                         <div class="submodule-icon">
                             <img src="assets/svg/Assets.svg" alt="Asset Management">
                         </div>
@@ -65,7 +66,7 @@
                     </div>
 
                     <!-- Security -->
-                    <div class="submodule-card">
+                    <div class="submodule-card" id="security">
                         <div class="submodule-icon">
                             <i class="fas fa-shield-alt"></i>
                         </div>
@@ -80,7 +81,7 @@
                     </div>
 
                     <!-- Surveillance -->
-                    <div class="submodule-card">
+                    <div class="submodule-card" id="surveillance">
                         <div class="submodule-icon">
                             <i class="fas fa-video"></i>
                         </div>
@@ -95,7 +96,7 @@
                     </div>
 
                     <!-- Utilities Monitoring -->
-                    <div class="submodule-card">
+                    <div class="submodule-card" id="utilities-monitoring">
                         <div class="submodule-icon">
                             <i class="fas fa-bolt"></i>
                         </div>
@@ -121,71 +122,78 @@
                     <p>Advanced automation technologies for seamless industrial control and monitoring</p>
                 </div>
 
-                <div class="submodules-grid">
-                    <!-- PLC -->
-                    <div class="submodule-card">
-                        <div class="submodule-icon">
-                            <i class="fas fa-microchip"></i>
-                        </div>
-                        <h3>PLC</h3>
-                        <h4>Programming Logic Control</h4>
-                        <p>Robust programmable logic controllers for reliable industrial automation and process control.</p>
-                        <ul class="submodule-features">
-                            <li>Real-time process control</li>
-                            <li>Flexible programming options</li>
-                            <li>High reliability & durability</li>
-                            <li>Seamless integration capabilities</li>
-                        </ul>
+                <!-- PLC -->
+                <div class="automation-block" id="plc">
+                    <div class="automation-img">
+                        <img src="assets/svg/Automatic.svg" alt="PLC">
                     </div>
-
-                    <!-- SCADA -->
-                    <div class="submodule-card">
-                        <div class="submodule-icon">
-                            <i class="fas fa-desktop"></i>
-                        </div>
-                        <h3>SCADA</h3>
-                        <h4>Supervisory Control and Data Acquisition</h4>
-                        <p>Comprehensive supervisory control systems for monitoring and managing industrial processes at scale.</p>
-                        <ul class="submodule-features">
-                            <li>Centralized monitoring & control</li>
-                            <li>Real-time data acquisition</li>
-                            <li>Historical data logging</li>
-                            <li>Alarm management & reporting</li>
-                        </ul>
-                    </div>
-
-                    <!-- VFD -->
-                    <div class="submodule-card">
-                        <div class="submodule-icon">
-                            <i class="fas fa-tachometer-alt"></i>
-                        </div>
-                        <h3>VFD</h3>
-                        <h4>Variable Frequency Drive</h4>
-                        <p>Precision motor control for energy efficiency and optimal performance in industrial applications.</p>
-                        <ul class="submodule-features">
-                            <li>Energy-efficient motor control</li>
-                            <li>Speed & torque optimization</li>
-                            <li>Soft start/stop capabilities</li>
-                            <li>Reduced mechanical stress</li>
-                        </ul>
-                    </div>
-
-                    <!-- HMI -->
-                    <div class="submodule-card">
-                        <div class="submodule-icon">
-                            <i class="fas fa-hand-pointer"></i>
-                        </div>
-                        <h3>HMI</h3>
-                        <h4>Human Machine Interface</h4>
-                        <p>Intuitive interfaces for seamless interaction between operators and industrial systems.</p>
-                        <ul class="submodule-features">
-                            <li>User-friendly touchscreen interfaces</li>
-                            <li>Real-time visualization</li>
-                            <li>Customizable dashboards</li>
-                            <li>Remote access capabilities</li>
+                    <div class="automation-content">
+                        <div class="automation-tag"><i class="fas fa-microchip"></i> Automation</div>
+                        <h3>PLC <span>— Programmable Logic Control</span></h3>
+                        <p>Robust programmable logic controllers that form the backbone of reliable industrial automation. PLCs execute deterministic, real-time control logic for every production process — from simple conveyors to complex multi-axis systems.</p>
+                        <ul class="automation-features">
+                            <li><i class="fas fa-check-circle"></i> Real-time process control with microsecond cycle times</li>
+                            <li><i class="fas fa-check-circle"></i> Flexible programming — Ladder, FBD, ST, IL, SFC</li>
+                            <li><i class="fas fa-check-circle"></i> High reliability & industrial-grade durability</li>
+                            <li><i class="fas fa-check-circle"></i> Seamless integration with SCADA, HMI & MES</li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- SCADA -->
+                <div class="automation-block reverse" id="scada">
+                    <div class="automation-img">
+                        <img src="assets/svg/wellcomeDashboard.png" alt="SCADA">
+                    </div>
+                    <div class="automation-content">
+                        <div class="automation-tag"><i class="fas fa-desktop"></i> Automation</div>
+                        <h3>SCADA <span>— Supervisory Control & Data Acquisition</span></h3>
+                        <p>A centralised system that monitors, controls, and gathers data from industrial processes across your entire facility — or across multiple sites — giving supervisors complete operational visibility.</p>
+                        <ul class="automation-features">
+                            <li><i class="fas fa-check-circle"></i> Centralised monitoring & control of all processes</li>
+                            <li><i class="fas fa-check-circle"></i> Real-time data acquisition from PLCs & field devices</li>
+                            <li><i class="fas fa-check-circle"></i> Historical data logging & trend analysis</li>
+                            <li><i class="fas fa-check-circle"></i> Alarm management, reporting & event logging</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- VFD -->
+                <div class="automation-block" id="vfd">
+                    <div class="automation-img">
+                        <img src="assets/svg/Advance.svg" alt="VFD">
+                    </div>
+                    <div class="automation-content">
+                        <div class="automation-tag"><i class="fas fa-tachometer-alt"></i> Automation</div>
+                        <h3>VFD <span>— Variable Frequency Drive</span></h3>
+                        <p>Precision motor speed and torque control that dramatically reduces energy consumption and mechanical wear. VFDs are critical for pumps, fans, compressors, and conveyors where variable speed delivers significant efficiency gains.</p>
+                        <ul class="automation-features">
+                            <li><i class="fas fa-check-circle"></i> Energy-efficient variable speed motor control</li>
+                            <li><i class="fas fa-check-circle"></i> Soft start/stop — eliminates current spikes</li>
+                            <li><i class="fas fa-check-circle"></i> Speed & torque optimisation in real time</li>
+                            <li><i class="fas fa-check-circle"></i> Reduced mechanical stress & extended motor life</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- HMI -->
+                <div class="automation-block reverse" id="hmi">
+                    <div class="automation-img">
+                        <img src="assets/svg/UserExperiance.svg" alt="HMI">
+                    </div>
+                    <div class="automation-content">
+                        <div class="automation-tag"><i class="fas fa-hand-pointer"></i> Automation</div>
+                        <h3>HMI <span>— Human Machine Interface</span></h3>
+                        <p>Intuitive touchscreen interfaces that bridge your operators and industrial control systems. HMIs deliver real-time process visualisation, alarm management, and system control — designed for clarity and speed of operation.</p>
+                        <ul class="automation-features">
+                            <li><i class="fas fa-check-circle"></i> User-friendly touchscreen interface design</li>
+                            <li><i class="fas fa-check-circle"></i> Real-time process visualisation & control</li>
+                            <li><i class="fas fa-check-circle"></i> Customisable dashboards per operator role</li>
+                            <li><i class="fas fa-check-circle"></i> Remote access via web browser & mobile app</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -200,7 +208,7 @@
 
                 <div class="submodules-grid">
                     <!-- Predictive Maintenance -->
-                    <div class="submodule-card">
+                    <div class="submodule-card" id="predictive-maintenance">
                         <div class="submodule-icon">
                             <img src="assets/svg/PreventiveMaintenances.svg" alt="Predictive Maintenance">
                         </div>
@@ -215,7 +223,7 @@
                     </div>
 
                     <!-- Condition Monitoring -->
-                    <div class="submodule-card">
+                    <div class="submodule-card" id="condition-monitoring">
                         <div class="submodule-icon">
                             <i class="fas fa-heartbeat"></i>
                         </div>
@@ -230,7 +238,7 @@
                     </div>
 
                     <!-- Vision AI -->
-                    <div class="submodule-card">
+                    <div class="submodule-card" id="vision-ai">
                         <div class="submodule-icon">
                             <i class="fas fa-eye"></i>
                         </div>
@@ -245,7 +253,7 @@
                     </div>
 
                     <!-- Energy Management System -->
-                    <div class="submodule-card">
+                    <div class="submodule-card" id="energy-management">
                         <div class="submodule-icon">
                             <i class="fas fa-leaf"></i>
                         </div>
@@ -289,6 +297,7 @@
     <script src="js/main.js"></script>
     <script src="js/products-tabs.js"></script>
     <script src="js/navigation.js"></script>
+    <script src="js/chatbot.js"></script>
 </body>
 
 </html>
