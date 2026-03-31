@@ -264,6 +264,7 @@
 .about-section {
   padding: 100px 0;
   background: var(--white);
+  z-index: relative;
 }
 
 .module-glimpse-image {
